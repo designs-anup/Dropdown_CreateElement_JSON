@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#navigation{
+    background-color: rgb(13, 0, 252);
+}
+
+.navList{
+    list-style: none;
+    display: flex;
+}
+.navList > li{
+    position: relative;
+}
+.navList a{
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+    color: rgb(255, 255, 255);
+}
+.navList a:hover{
+    text-decoration: underline;
+}
+
+.navList .subNav{
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: rgb(188, 128, 244);
+    width: max-content;
+}
+.navList .subNav li{
+    border: 1px solid #fff;
+}
+
+.navList li:hover .subNav{
+    display: block;
+}
